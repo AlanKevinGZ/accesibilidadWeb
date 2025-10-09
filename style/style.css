@@ -1,0 +1,84 @@
+:root{
+  --brand:#0b3d91;     
+  --text:#111;
+  --bg:#ffffff;
+  --muted:#666;
+  --radius:8px;
+  --gap:1rem;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+}
+
+a{color:var(--brand); text-decoration:none}
+a:focus, button:focus, input:focus, textarea:focus{
+  outline:3px solid #ffd54f; /* visible focus */
+  outline-offset:2px;
+}
+
+.skip-link{
+  position:absolute;
+  left:-999px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+.skip-link:focus{
+  left:1rem;
+  top:1rem;
+  width:auto;
+  height:auto;
+  background:#000;
+  color:#fff;
+  padding:.5rem .75rem;
+  z-index:9999;
+}
+
+
+.site-header{
+  background:#f7f9fc;
+  padding:1rem;
+  border-bottom:1px solid #e6eef9;
+}
+.site-header h1{margin:.2rem 0 0; font-size:1.25rem}
+.main-nav ul{list-style:none; padding:0; margin:.5rem 0 0; display:flex; gap:1rem}
+.main-nav a{display:inline-block; padding:.35rem .5rem; border-radius:4px}
+.main-nav a[aria-current="page"]{background:var(--brand); color:#fff}
+
+
+.container{max-width:1000px; margin:1.25rem auto; padding:0 1rem}
+.hero img{width:100%; height:auto; border-radius:8px; display:block}
+.featured{display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:1rem; margin-top:1rem}
+.product{background:#fff; padding:1rem; border-radius:8px; box-shadow:0 1px 4px rgba(10,10,10,.04)}
+.product img{width:100%; height:auto; border-radius:6px}
+
+
+.product-list{list-style:none; padding:0; margin:0; display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:1rem}
+.product-card{background:#fff; padding:1rem; border-radius:8px}
+
+
+form{background:#fff; padding:1rem; border-radius:8px; box-shadow:0 1px 6px rgba(0,0,0,.05)}
+.form-row{margin-bottom:.75rem; display:flex; flex-direction:column; gap:.35rem}
+label{font-weight:600}
+input[type="text"], input[type="email"], textarea{
+  padding:.5rem; border:1px solid #cbd6e8; border-radius:6px; font-size:1rem;
+}
+.btn{display:inline-block; padding:.5rem .85rem; background:var(--brand); color:#fff; border-radius:6px; border:0; text-decoration:none}
+button.btn{cursor:pointer}
+
+/* Footer */
+.site-footer{background:#f3f6fb; padding:1rem; text-align:center; margin-top:1.25rem}
+
+/* Responsive */
+@media (max-width:600px){
+  .main-nav ul{flex-direction:column; gap:.25rem}
+}

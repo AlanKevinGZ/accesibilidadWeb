@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mi Tienda Accesible — Contacto</title>
+  <link rel="stylesheet" href="style/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#contacto-form">Saltar al formulario</a>
+
+  <header class="site-header">
+    <h1>Contacto</h1>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="products.html">Productos</a></li>
+        <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="contacto">
+      <h2>Escríbenos</h2>
+
+     
+      <form id="contacto-form" action="#" method="post" aria-label="Formulario de contacto" novalidate>
+        <div class="form-row">
+          <label for="nombre">Nombre completo</label>
+          <input id="nombre" name="nombre" type="text" required />
+        </div>
+
+        <div class="form-row">
+          <label for="email">Correo electrónico</label>
+          <input id="email" name="email" type="email" required />
+        </div>
+
+        <div class="form-row">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+        </div>
+
+        <div class="form-row">
+          <button type="submit" class="btn">Enviar mensaje</button>
+        </div>
+      </form>
+    </section>
+
+    <aside class="info">
+      <h3>Horario</h3>
+      <p>Lun–Vie: 9:00–18:00</p>
+    
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <p>Gracias por contactarnos </p>
+  </footer>
+</body>
+</html>
