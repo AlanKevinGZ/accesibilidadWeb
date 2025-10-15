@@ -1,0 +1,3 @@
+Este proyecto se enfoca en analizar y mejorar la accesibilidad de sitios web, aplicando los principios de diseño inclusivo y las pautas establecidas por la W3C (Web Content Accessibility Guidelines – WCAG). El objetivo principal es garantizar que las páginas web sean usables y comprensibles por todas las personas, incluyendo aquellas con discapacidades visuales, auditivas o motoras.
+
+Durante la práctica, se evaluaron diferentes aspectos del sitio para identificar barreras que dificultan la experiencia del usuario, como la ausencia de etiquetas semánticas, bajo contraste de color, o falta de compatibilidad con lectores de pantalla. Posteriormente, se implementaron mejoras en el código HTML y CSS para cumplir con los estándares de accesibilidad.
